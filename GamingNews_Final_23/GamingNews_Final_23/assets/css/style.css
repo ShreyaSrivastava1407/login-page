@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+html,
+body {
+  background: #2c2f33;
+}
+
+/*===== NAVBAR =====
+  ===== START  ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100vw;
+  background: #23272a;
+  padding: 0 30px;
+  align-items: center;
+  box-shadow: 0px 0px 20px black;
+  position: fixed;
+  z-index: 2;
+}
+
+nav .logo-top {
+  height: 30px;
+  width: 40px;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+nav .login-signup {
+  margin-right: 10px;
+  margin-left: 20px;
+  color: white;
+  font-size: 34px;
+}
+
+/*===== SEARCH =====
+  ===== START  ===== */
+.search-container {
+  width: 450px;
+}
+
+.search-container form {
+  height: 29px;
+  display: flex;
+}
+
+.search-container input,
+button {
+  border: none;
+}
+
+.search-container input {
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+  padding: 5px;
+  background: white;
+}
+
+.search-container button {
+  padding: 4px 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  background: white;
+}
+/*===== SEARCH =====
+  ===== END    ===== */
+
+/*===== NAVBAR =====
+  ===== END    ===== */
+
+/*===== SIDEBAR =====
+  ===== START   ===== */
+.sidebar {
+  width: 240px;
+  height: calc(100vh - 50px);
+  float: left;
+  position: fixed;
+  margin-top: 50px;
+  background: #23272a;
+}
+.entities {
+  margin-top: 15px;
+}
+
+.sidebar-option {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-option img {
+  border: 1px solid white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.sidebar-option li {
+  margin-left: 10px;
+  font: weight 400;
+  color: white;
+}
+
+/*===== SIDEBAR =====
+  ===== FOOTER =====
+  ===== START   ===== */
+.sidebar-footer {
+  height: 187px;
+  width: 240px;
+  bottom: 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+}
+.sidebar-footer ul {
+  margin: 20px;
+}
+.sidebar-footer ul li a {
+  color: rgb(170, 170, 170);
+  font-weight: 300;
+}
+.copyright {
+  color: rgb(170, 170, 170);
+  margin: 20px;
+  position: fixed;
+  font-weight: 400;
+  bottom: 0;
+}
+/*===== SIDEBAR =====
+  ===== FOOTER =====
+  ===== END   ===== */
+/*===== SIDEBAR =====
+  ===== END     ===== */
+
+/*===== CONTENT =====
+  ===== START   ===== */
+.content-area {
+  width: calc(100vw - 240px);
+  float: right;
+  margin-top: 50px;
+  background-color: #2c2f33;
+}
+
+.content-news {
+  width: 50%;
+  margin: 13px auto;
+  background: white;
+}
+
+.news-main {
+  display: flex;
+}
+
+.news-main img {
+  height: 180px;
+  width: 280px;
+}
+
+.news-reading {
+  padding: 0 10px;
+  margin-top: 5px;
+}
+
+.news-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+.news-info {
+  display: flex;
+}
+
+.news-info h5 {
+  font-weight: 400;
+}
+
+.news-time {
+  margin-left: 22px;
+}
+
+.news-info h5 a {
+  color: black;
+}
+
+.external-link {
+  margin-right: 5px;
+  color: black;
+}
+
+.writer-name {
+  margin-left: 3px;
+}
+
+.image-credit {
+  margin: 5px;
+}
+.news-main h6 {
+  margin-left: 5px;
+  color: rgb(92, 85, 85);
+  font-style: italic;
+}
+/*===== CONTENT =====
+  ===== END   ===== */
+
+/* 
+  ===== RESPONSIVE =====
+  ===== START      ===== */
+@media only screen and (max-width: 1670px) {
+  .content-news {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1490px) {
+  .content-news {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1490px) {
+  .content-news {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1490px) {
+  .content-news {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1078px) {
+  .sidebar {
+    width: 60px;
+  }
+  .sidebar-footer {
+    display: none;
+  }
+  .sidebar-option li {
+    display: none;
+  }
+  .content-area {
+    width: calc(100vw - 60px);
+  }
+  .content-news {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .content-news {
+    width: 96%;
+  }
+}
+@media only screen and (max-width: 848px) {
+  .news-reading h2 {
+    font-size: 16px;
+  }
+  .news-reading p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 706px) {
+  .content-news {
+    width: 70%;
+  }
+  .sidebar {
+    width: 50px;
+  }
+  .sidebar-option img {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+  .entities {
+    margin-top: 10px;
+  }
+  .news-main {
+    display: block;
+  }
+  .content-area {
+    width: calc(100vw - 50px);
+  }
+  .news-reading h2 {
+    font-size: 17px;
+  }
+  .news-reading p {
+    font-size: 14px;
+  }
+  .news-main img {
+    height: 170px;
+    width: 100%;
+  }
+  .news-info {
+    font-size: 14px;
+  }
+  .writer-name {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 604px) {
+  .content-news {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 496px) {
+  .content-news {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .content-news {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 378px) {
+  .news-time {
+    margin-left: 8px;
+  }
+  nav .login-signup {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  nav .logo-top {
+    height: 20px;
+    width: 30px;
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+  nav {
+    padding: 0 10px;
+  }
+}
+/* 
+  ===== RESPONSIVE =====
+  ===== END        ===== */
+
+/* 
+  ===== NAVBAR   =====
+  ===== DROPDOWN ===== 
+  ===== START    ===== */
+.dropbtn {
+  background-color: #23272a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  cursor: pointer;
+}
+
+/* 
+  ===== NAVBAR   =====
+  ===== DROPDOWN ===== 
+  ===== END      ===== 
+  */

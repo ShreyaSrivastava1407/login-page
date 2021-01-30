@@ -1,0 +1,62 @@
+.profile-top {
+  padding: 20px;
+  display: flex;
+  color: white;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+}
+.profile-top img {
+  box-shadow: 10px 10px rgba(0, 128, 0, 0.342);
+  height: 250px;
+  width: 250px;
+}
+
+.user-detail {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.user-detail p {
+  width: 450px;
+  height: 250px;
+  margin-top: 10px;
+}
+
+.user-detail h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.user-detail h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.user-detail button {
+  margin-top: 5px;
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+}
+.user-detail button:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 819px) {
+  .profile-top {
+    display: block;
+  }
+  .user-detail {
+    margin-left: 0px;
+    padding: 0px;
+  }
+  .user-detail p {
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+  }
+}
